@@ -1,0 +1,120 @@
+require:
+  - rubocop-minitest
+
+AllCops:
+  TargetRubyVersion: 3.0
+  NewCops: enable 
+
+# Правила для отступов и пробелов
+Layout/IndentationWidth:
+  Enabled: true
+  Width: 2
+
+Layout/ExtraSpacing:
+  Enabled: true
+  AllowForAlignment: true
+
+Layout/SpaceAroundOperators:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+  EnforcedStyle: no_space
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceBeforeComma:
+  Enabled: true
+
+# Правила для стиля кода
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/PercentLiteralDelimiters:
+  Enabled: true
+  PreferredDelimiters:
+    '%': '()'
+    '%i': '()'
+    '%q': '()'
+    '%Q': '()'
+    '%r': '()'
+    '%s': '()'
+    '%w': '()'
+    '%W': '()'
+    '%x': '()'
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: nested
+
+Style/IfUnlessModifier:
+  Enabled: true
+
+Style/WhileUntilModifier:
+  Enabled: true
+
+Layout/CaseIndentation:
+  Enabled: true
+  EnforcedStyle: end
+
+Style/EmptyMethod:
+  Enabled: true
+  EnforcedStyle: expanded
+
+Style/MethodDefParentheses:
+  Enabled: true
+  EnforcedStyle: require_no_parentheses
+
+Style/BlockDelimiters:
+  Enabled: true
+  EnforcedStyle: semantic
+
+# Правила для метрик
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 15
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 20
+
+Metrics/ClassLength:
+  Enabled: true
+  Max: 150
+
+Metrics/ModuleLength:
+  Enabled: true
+  Max: 150
