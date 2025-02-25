@@ -1,7 +1,6 @@
 # Look-and-Say Sequence  
 
-![Tests](https://github.com/Houssse/first_test_task/actions/workflows/test.yml/badge.svg)  
-![Lint](https://github.com/Houssse/first_test_task/actions/workflows/lint.yml/badge.svg)  
+![Tests](https://github.com/Houssse/first_test_task/actions/workflows/test.yml/badge.svg) ![Lint](https://github.com/Houssse/first_test_task/actions/workflows/lint.yml/badge.svg)  
 
 ## Условие задачи
 Дана последовательность:
